@@ -162,7 +162,7 @@ class DiagramDraw(blockdiag.drawer.DiagramDraw):
                 label = node.address[network]
                 self.drawer.textarea(connector.textbox, label,
                                      self.metrics.font_for(node),
-                                     fill=node.textcolor, halign="left")
+                                     fill=network.textcolor, halign="left")
 
         super(DiagramDraw, self).node(node, **kwargs)
 
